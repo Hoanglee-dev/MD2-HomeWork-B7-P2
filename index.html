@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .ShowAll {
+      width: calc((100% / 3) - 7px);
+      height: 150px;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 7px;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <div class="ShowAll">
+      <h4>
+        Bài 1- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử. Chương
+        trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc
+        bằng 10.
+      </h4>
+      <button onclick="countNumbersGE10()">Click to display</button>
+    </div>
+
+    <div class="ShowAll">
+      <h4>
+        Bài 2- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác
+        nhau. Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong
+        mảng và vị trí của phần tử đó.
+      </h4>
+      <button onclick="findMaxAndIndex()">Click to display</button>
+    </div>
+
+    <div class="ShowAll">
+      <h4>
+        Bài 3- Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn
+        nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng.
+      </h4>
+      <button onclick="findMaxAndAverage()">Click to display</button>
+    </div>
+
+    <div class="ShowAll">
+      <h4>
+        Bài 4- Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo
+        ngược các phần tử trong mảng đó.
+      </h4>
+      <button onclick="reverseArray()">Click to display</button>
+    </div>
+
+    <div class="ShowAll">
+      <h4>Bài 5- Viết chương trình đếm số nguyên âm trong một chuỗi</h4>
+      <button onclick="countNegativeNumbers()">Click to display</button>
+    </div>
+
+    <div class="ShowAll">
+      <h4>
+        Bài 6- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10
+        phần tử, nhập/tạo phần tử số nguyên V. Chương trình tìm xem V có nằm
+        trong mảng số nguyên không? Nếu V thuộc mảng số nguyên thì in ra "V is
+        in the array" còn lại in ra "V is not in the array".
+      </h4>
+      <button onclick="checkNumberInArray()">Click to display</button>
+    </div>
+
+    <div class="ShowAll">
+      <h4>
+        Bài 7- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10
+        phần tử, nhập/tạo phần tử số nguyên V. Chương trình kiểm tra xem V có
+        thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng (Bản
+        chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V,
+        và gán 0 cho phần tử cuối cùng của mảng)
+      </h4>
+      <button onclick="removeNumberFromArray()">Click to display</button>
+    </div>
+
+    <div class="ShowAll">
+      <h4>
+        Bài 8- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10
+        phần tử. Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra
+        mảng đã được sắp xếp.
+      </h4>
+      <button onclick="sortArrayDescending()">Click to display</button>
+    </div>
+
+    <div class="ShowAll">
+      <h4>
+        Bài 9- Viết chương trình khởi tạo/nhập vào 2 mảng số nguyên gồm 10 phần
+        tử, gọi là mảng a và b. Mảng c là một mảng được khai báo gồm 20 phần tử
+        số nguyên. Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a
+        vào mảng c. Hiển thị mảng c.
+      </h4>
+      <button onclick="mergeArray()">Click to display</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
